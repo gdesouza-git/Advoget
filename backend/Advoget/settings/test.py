@@ -1,6 +1,5 @@
 from .base import *  # noqa
 
-
 SECRET_KEY = "test"
 
 STATIC_ROOT = base_dir_join('staticfiles')

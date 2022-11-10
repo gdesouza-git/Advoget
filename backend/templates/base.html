@@ -15,6 +15,7 @@
   {% render_bundle 'main' 'css' %}
 </head>
 
+
 <body>
   {% include 'includes/sentry_init.html' %}
 
@@ -23,6 +24,7 @@
 
   <!-- django-js-reverse -->
   <script src="{% url 'js_reverse' %}" type="text/javascript"></script>
+
 
   <!-- Webpack rendered Javascript -->
   {% render_bundle 'main' 'js' 'DEFAULT' %}

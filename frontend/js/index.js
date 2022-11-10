@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 import '../sass/style.scss';
 
 import App from './App';
-import Home from './pages/Home.js'; //--
+
 
 Sentry.init({
   dsn: window.SENTRY_DSN,
@@ -14,5 +14,5 @@ Sentry.init({
 });
 
 ReactDOM.render(
-<Home />, //--
+
 <App />, document.getElementById('react-app'));

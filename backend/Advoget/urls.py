@@ -2,9 +2,9 @@ from django.conf.urls import include
 from django.urls import path
 from django.contrib import admin
 
+
 import django_js_reverse.views
 from rest_framework.routers import DefaultRouter
-
 from common.routes import routes as common_routes
 
 router = DefaultRouter()
@@ -17,6 +17,6 @@ urlpatterns = [
     path("", include("common.urls"), name="common"),
     path("admin/", admin.site.urls, name="admin"),
     path("jsreverse/", django_js_reverse.views.urls_js, name="js_reverse"),
-
+    #path("cliente/", cliente, name="cliente"),
     path("api/", include(router.urls), name="api"),
 ]
