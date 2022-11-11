@@ -1,11 +1,8 @@
 from django.shortcuts import render
 from .forms import ClienteForm
-
-
 def home_view(request):
     context = {}
 
-    # create object of form
     form = ClienteForm(request.POST or None, request.FILES or None)
 
     # check if form data is valid
